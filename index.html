@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>poli-meter</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1> Fill this out to find out how you rate on the political meter.</h1>
+      <form id="personalInfo">
+        <div class="form-group">
+          <label for="age">Age</label>
+          <input id="age" type="text">
+        </div>
+        <label for="area">Area you live</label>
+        <select class ="form-control" id="area">
+          <option value="rural">rural</option>
+          <option value="suburb">suburb</option>
+          <option value="metro">metro</option>
+        </select>
+        <label for="gender">Gender</label>
+        <select class="form-control" id="gender">
+          <option value="">Select one:</option>
+          <option value="female">Female</option>
+          <option value="male">Male</option>
+        </select>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+      <div class="everything">
+        <div id="moderate">
+          <p>You are moderate!<p>
+        </div>
+        <div id="liberal">
+          <p>You are liberal!<p>
+        </div>
+        <div id="conservative">
+          <p>You are conservative!<p>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
